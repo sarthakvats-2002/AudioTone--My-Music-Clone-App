@@ -1,5 +1,3 @@
-console.log("Welcome to my music App");
-
 //Initialise the Variables
 let songIndex=0;
 let audioElement= new Audio('songs/1.mp3');
@@ -137,7 +135,6 @@ else{
 })
 
 document.getElementById('next').addEventListener('click', ()=>{
-    debugger
     if(songIndex===9){
         makeAllPause();
         songIndex=1;
@@ -162,7 +159,6 @@ document.getElementById('next').addEventListener('click', ()=>{
 });
 
 document.getElementById('previous').addEventListener('click', ()=>{
-    debugger
     makeAllPause();
     if(songIndex===0){
         songIndex=9;
